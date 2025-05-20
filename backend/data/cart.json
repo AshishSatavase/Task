@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Classic White T-Shirt",
+        "description": "A comfortable, high-quality cotton t-shirt perfect for everyday wear.",
+        "sizeOptions": ["XS", "S", "M", "L", "XL"],
+        "price": 29.99,
+        "images": [
+          "http://localhost:5000/data/Silhouette1.jpg",
+          "http://localhost:5000/data/Silhouette2.jpg",
+          "http://localhost:5000/data/Silhouette3.jpg"
+        ],
+        "video": "http://localhost:5000/data/Silhouette1.mp4"
+      },
+      {
+        "id": 1,
+        "name": "Classic White T-Shirt",
+        "description": "A comfortable, high-quality cotton t-shirt perfect for everyday wear.",
+        "sizeOptions": ["XS", "S", "M", "L", "XL"],
+        "price": 29.99,
+        "images": [
+          "http://localhost:5000/data/Silhouette1.jpg",
+          "http://localhost:5000/data/Silhouette2.jpg",
+          "http://localhost:5000/data/Silhouette3.jpg"
+        ],
+        "video": "http://localhost:5000/data/Silhouette1.mp4"
+      }
+] 
