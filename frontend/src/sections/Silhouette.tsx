@@ -19,7 +19,7 @@ const productData: Product = {
   sizeOptions: ["XS", "S", "M", "L", "XL"],
   price: 7999,
   images: ["/Silhouette/Silhouette1.jpg", "/Silhouette/Silhouette2.jpg","/Silhouette/Silhouette3.jpg"],
-  video: "/Silhouette/Silhouette.mp4",
+  video: "https://res.cloudinary.com/dpsdvoyr3/video/upload/v1747767371/Task/aqwavrfs76bms5lcgawn.mp4",
 }
 
 const Silhouette: React.FC<SilhouetteProps> = ({ className }) => {

@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
           <span className="text-white text-xs md:text-lg ml-1 self-end md:mt-2">© 2025</span>
         </div>
         <div className="rounded-xl overflow-hidden relative w-full aspect-[2.4/1] min-h-[200px]">
-          <video className="w-full h-full object-cover" src="/hero.mp4" autoPlay loop muted playsInline />
+          <video className="w-full h-full object-cover" src="https://res.cloudinary.com/dpsdvoyr3/video/upload/v1747767386/Task/yhqw6ftlb2e9nltc3lvv.mov" autoPlay loop muted playsInline />
           <div className="absolute inset-0 bg-black opacity-20 pointer-events-none" />
           <span className="absolute bottom-6 right-4 md:right-8 text-white text-lg md:text-3xl font-light drop-shadow-lg">
             A silhouette worth remembering

@@ -11,7 +11,7 @@ const BentoGrid: React.FC<BentoGridProps> = ({ className }) => {
         <div className="grid grid-cols-3 gap-3 md:gap-6 w-full">
           {/* Large video card (row 1, col 1-2) */}
           <div className="col-span-2 rounded-xl overflow-hidden bg-gray-900 relative h-[100px] md:h-[440px]">
-            <video src="/bento/Bento1.mp4" className="w-full h-full object-cover" autoPlay loop muted playsInline />
+            <video src="https://res.cloudinary.com/dpsdvoyr3/video/upload/v1747767393/Task/fjgvjsyoh2kuwqb1gky6.mp4" className="w-full h-full object-cover" autoPlay loop muted playsInline />
           </div>
 
           {/* Small card (row 1, col 3) */}

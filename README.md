@@ -108,4 +108,4 @@ For any queries or support, please reach out to us at [ashishsatavase13@gmail.co
 ## 🎬 Project Video
 Check out a short video demonstrating the project:
 
-[Watch the video](/frontend/public/Task.mp4) 
+[Watch the video](https://res.cloudinary.com/dpsdvoyr3/video/upload/v1747767393/Task/fjgvjsyoh2kuwqb1gky6.mp4) 
