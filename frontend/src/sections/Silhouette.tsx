@@ -82,7 +82,7 @@ const Silhouette: React.FC<SilhouetteProps> = ({ className }) => {
         </div>
 
         {/* Right: Product details */}
-        <div className="w-full md:w-1/2 bg-white p-4 md:p-12 flex flex-col md:h-screen pb-6 md:pb-24 md:flex-none">
+        <div className="w-full md:w-1/2 bg-white p-4 md:p-12 flex flex-col md:h-screen pb-6 md:pb-24 md:flex-none overflow-y-auto">
           <div className="flex-grow">
             <p className="text-black text-base md:text-lg mb-4 md:mb-8">{product.description}</p>
 
