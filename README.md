@@ -1,12 +1,9 @@
 # Eclypse - Modern Fashion E-commerce Platform
 
-![Eclypse Logo](/frontend/public/logo.png)
+<img src="/frontend/public/logo.png" alt="Eclypse Logo" width="100" height="100" />
 
 ## 🌟 Live Demo
-Visit our live website: [Eclypse](https://eclypse-3ccc.onrender.com/)
-
-## 🚀 Overview
-Eclypse is a modern, responsive e-commerce platform built with React and Node.js, featuring a sleek design and intuitive user interface. The platform showcases premium fashion products with an emphasis on user experience and visual appeal.
+Visit live website: [Eclypse](https://eclypse-3ccc.onrender.com/)
 
 ## 🛠️ Tech Stack
 
@@ -104,12 +101,6 @@ eclypse/
 The application is deployed on Render:
 - Frontend: Static site deployment
 - Backend: Web service deployment
-
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👥 Contact
 For any queries or support, please reach out to us at [ashishsatavase13@gmail.com](mailto:ashishsatavase13@gmail.com) 
