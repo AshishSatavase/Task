@@ -103,4 +103,9 @@ The application is deployed on Render:
 - Backend: Web service deployment
 
 ## 👥 Contact
-For any queries or support, please reach out to us at [ashishsatavase13@gmail.com](mailto:ashishsatavase13@gmail.com) 
+For any queries or support, please reach out to us at [ashishsatavase13@gmail.com](mailto:ashishsatavase13@gmail.com)
+
+## 🎬 Project Video
+Check out a short video demonstrating the project:
+
+[Watch the video](/frontend/public/Task.mp4) 
