@@ -5,6 +5,14 @@
 ## 🌟 Live Demo
 Visit live website: [Eclypse](https://eclypse-3ccc.onrender.com/)
 
+## 🎬 Project Video Demo
+
+<video width="60%" controls>
+  <source src="https://res.cloudinary.com/dpsdvoyr3/video/upload/v1747767355/Task/htvnow95sws7pge8bdsv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -105,7 +113,3 @@ The application is deployed on Render:
 ## 👥 Contact
 For any queries or support, please reach out to us at [ashishsatavase13@gmail.com](mailto:ashishsatavase13@gmail.com)
 
-## 🎬 Project Video
-Check out a short video demonstrating the project:
-
-[Watch the video](https://res.cloudinary.com/dpsdvoyr3/video/upload/v1747767393/Task/fjgvjsyoh2kuwqb1gky6.mp4) 
