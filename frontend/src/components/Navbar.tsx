@@ -32,7 +32,7 @@ const Navbar = () => {
           <button onClick={() => navigate('/cart')} className="hover:underline focus:outline-none">Cart</button>
           {!isCartPage && (
             <button 
-              onClick={() => navigate('/cart')}
+              onClick={() => navigate('/checkout')}
               className="ml-4 mr-6 bg-white text-black px-7 py-3 rounded-xl font-medium text-xl transition-colors hover:bg-red-500 hover:text-white"
             >
               Buy

@@ -74,20 +74,28 @@ const Silhouette: React.FC<SilhouetteProps> = ({ className }) => {
   }
 
   return (
-    <section className={`w-full bg-black ${className || ''}`}>
-      <div className="max-w-[1800px] mx-auto flex flex-col md:flex-row md:overflow-visible">
+    <section className={`w-full min-h-screen bg-black ${className || ''}`}>
+      <div className="max-w-[1800px] mx-auto flex flex-col lg:flex-row">
         {/* Left: Product video/image */}
-        <div className="w-full md:w-1/2 h-[600px] md:h-screen md:flex-none">
-          <video src={product.video} className="w-full h-full object-cover" autoPlay loop muted playsInline />
+        <div className="w-full lg:w-1/2 h-[50vh] lg:h-screen">
+          <video 
+            src={product.video} 
+            className="w-full h-full object-cover" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+          />
         </div>
 
         {/* Right: Product details */}
-        <div className="w-full md:w-1/2 bg-white p-4 md:p-12 flex flex-col md:h-screen pb-6 md:pb-24 md:flex-none overflow-y-auto">
-          <div className="flex-grow">
-            <p className="text-black text-base md:text-lg mb-4 md:mb-8">{product.description}</p>
+        <div className="w-full lg:w-1/2 bg-white p-6 lg:p-12 flex flex-col justify-between min-h-[50vh] lg:min-h-screen">
+          {/* Top section with description and images */}
+          <div className="space-y-6">
+            <p className="text-black text-sm lg:text-base">{product.description}</p>
 
             {/* Product images */}
-            <div className="grid grid-cols-3 gap-2 md:gap-4 mb-4 md:mb-6">
+            <div className="grid grid-cols-3 gap-2">
               {product.images.map((image, index) => (
                 <div key={index} className="aspect-square overflow-hidden">
                   <img
@@ -98,26 +106,24 @@ const Silhouette: React.FC<SilhouetteProps> = ({ className }) => {
                 </div>
               ))}
             </div>
-            {/* Thin separator below images */}
-            <div className="w-full h-px bg-gray-200 mb-4 md:mb-6" />
           </div>
 
-          {/* Price and size selection */}
-          <div className="mt-auto">
-            <div className="border-t border-gray-200 pt-4 md:pt-6 mb-4 md:mb-6">
-              <div className="flex items-baseline">
-                <h3 className="text-xl md:text-3xl font-bold text-black">₹ {product.price.toLocaleString()}</h3>
-                <span className="ml-1 md:ml-3 text-xs text-gray-500">MRP incl. of all taxes</span>
-              </div>
+          {/* Bottom section with price, size selection, and buttons */}
+          <div className="mt-8 space-y-6">
+            {/* Price */}
+            <div className="flex items-baseline">
+              <h3 className="text-2xl lg:text-3xl font-bold text-black">₹ {product.price.toLocaleString()}</h3>
+              <span className="ml-2 text-xs text-gray-500">MRP incl. of all taxes</span>
             </div>
 
-            <div className="flex flex-col gap-2 md:gap-3 mb-6 md:mb-3">
+            {/* Size selection */}
+            <div className="space-y-2">
               <p className="text-xs text-gray-500 font-medium">Please select a size</p>
-              <div className="flex gap-2 md:gap-4">
+              <div className="flex flex-wrap gap-2">
                 {product.sizeOptions.map((size, index) => (
                   <button
                     key={index}
-                    className={`w-8 h-8 md:w-12 md:h-12 rounded-md flex items-center justify-center transition-colors text-xs md:text-base ${
+                    className={`w-10 h-10 lg:w-12 lg:h-12 rounded-md flex items-center justify-center transition-colors text-sm ${
                       selectedSize === size
                         ? "bg-black text-white"
                         : "border border-gray-300 text-gray-800 hover:bg-gray-100"
@@ -128,24 +134,26 @@ const Silhouette: React.FC<SilhouetteProps> = ({ className }) => {
                   </button>
                 ))}
               </div>
-              <button type="button" onClick={() => setIsSizeChartOpen(true)} className="text-xs underline text-gray-500 text-left w-fit">
+              <button 
+                type="button" 
+                onClick={() => setIsSizeChartOpen(true)} 
+                className="text-xs underline text-gray-500"
+              >
                 Size chart
               </button>
             </div>
-            {/* Thin separator below size selection */}
-            <div className="w-full h-px bg-gray-200 mb-8 md:mb-8" />
 
             {/* Action buttons */}
-            <div className="flex flex-col-reverse md:flex-row gap-2 md:gap-4 w-full mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <button
                 onClick={handleAddToCart}
-                className="border border-black text-black py-2 px-4 rounded-lg flex-1 hover:bg-gray-100 transition-colors text-xs md:text-lg"
+                className="flex-1 border border-black text-black py-3 px-4 rounded-lg hover:bg-gray-100 transition-colors text-sm lg:text-base"
               >
                 Add to Cart
               </button>
               <button
                 onClick={() => navigate('/checkout')}
-                className="bg-black text-white py-2 px-4 rounded-lg flex-1 hover:bg-red-600 transition-colors text-xs md:text-lg"
+                className="flex-1 bg-black text-white py-3 px-4 rounded-lg hover:bg-red-600 transition-colors text-sm lg:text-base"
               >
                 Buy
               </button>
@@ -156,8 +164,8 @@ const Silhouette: React.FC<SilhouetteProps> = ({ className }) => {
 
       {/* Size Chart Modal */}
       {isSizeChartOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 ">
-          <div className="bg-black rounded-xl border-white border-2 p-2 rounded-lg shadow-lg w-[90vw] max-w-md p-6 relative mx-2 text-white">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
+          <div className="bg-black rounded-xl border-white border-2 p-6 w-[90vw] max-w-md relative mx-2 text-white">
             <button
               className="absolute top-3 right-3 text-gray-400 hover:text-white"
               onClick={() => setIsSizeChartOpen(false)}
@@ -165,9 +173,9 @@ const Silhouette: React.FC<SilhouetteProps> = ({ className }) => {
             >
               <XMarkIcon className="w-6 h-6" />
             </button>
-            <h2 className="text-lg font-semibold mb-4 text-center text-white">Size Chart</h2>
+            <h2 className="text-lg font-semibold mb-4 text-center">Size Chart</h2>
             <div className="overflow-x-auto">
-              <table className="min-w-full text-xs md:text-sm text-left border-collapse text-white">
+              <table className="min-w-full text-xs md:text-sm text-left border-collapse">
                 <thead>
                   <tr>
                     <th className="py-2 px-2 border-b border-gray-700 font-semibold">Size</th>
